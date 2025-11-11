@@ -766,23 +766,331 @@ footer .copyright{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* About Page */
 
+#page-header.about-header {
+  background-image: url("img/about/banner.png");
+  
+}
 
+#about-head {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;
+  padding: 80px 150px;
+  gap: 50px;*/
+}
 
+#about-head img{
+  width: 50%;
+  height: auto;
+  
+}
+
+#about-head div{
+  padding-left: 40px;
+}
 
 /* Contact Us Page */
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#contact-details .details{
+  width: 40%;
+}
+
+#contact-details .details span,
+#form-details .form span {
+  font-size: 12px;
+  
+}
+
+#contact-details .details h2,
+#form-details .form h2{
+  font-size: 26px;
+  padding: 20px 0;
+  line-height: 35px;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+
+#contact-details .details li {
+  list-style: none;
+  padding: 10px 0;
+  display: flex;
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  color: #088178;
+  margin-right: 22px;
+}
+
+#contact-details .details li p {
+  font-size: 14px;
+  color: #465b52;
+  margin: 0;
+}
+
+
+#contact-details .map{
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px; border: 1px solid #e1e1e1;
+}
+
+
+
+
+
+#form-details form{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e1e1e1;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+
+#form-details form button {
+  background-color: #088178;
+  color: #fff;
+  
+}
+
+#form-details .people div{
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#form-details .people div img{
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#form-details .people div p{
+  font-size: 13px;
+  margin: 0;
+  color: #465b52;
+  line-height: 25px;
+}
+
+#form-details .people div p span{
+  font-weight: 600;
+  color: #088178;
+  display: block;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Account Page*/
+#page-header.account-header {
+  background-image: url("img/banner/b1.jpg");
+  
+}
+
+#login-register {
+    /* section-p1 gives 40px padding, we adjust alignment here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ensures it takes up space even if content is short */
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+
+/* Tab Styling (Login/Register) */
+.account-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #465b52; /* Dark color */
+    padding: 0 15px 5px 15px;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.tab-link.active {
+    color: #0d6efd; /* Blue color from image */
+}
+
+.tab-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+    right: 10px;
+    height: 3px;
+    background-color: #0d6efd; /* Blue color */
+    border-radius: 2px;
+}
+
+/* Form Description */
+.description {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Form Elements */
+#login-form label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#login-form input:focus {
+    border-color: #088178; /* Use your brand color on focus */
+}
+
+/* Password Input Group for Eye Icon */
+.password-input-group {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Form Footer (Remember Me & Lost Password) */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.remember-me label {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.lost-password {
+    font-size: 14px;
+    color: #0d6efd; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    background-color: #0d6efd; /* Blue button color from image */
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #0a58ca;
+}
+
+.input-group {
+    position: relative;
+}
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280; /* Tailwind gray-500 */
+}
+/* Custom style for the active tab indicator */
+.register-tab {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
 
 
 @media (max-width:799px){
@@ -887,6 +1195,16 @@ footer .copyright{
   #newsletter .form{
     width: 70%;
   }
+
+  /* Contact Us Page */
+  #form-details {
+    padding: 40px;
+  }
+
+ #form-details form{
+    width: 50%;
+  }
+
 
 }
 
@@ -1016,4 +1334,59 @@ footer .copyright{
   #blog .blog-details{
     width: 100%;
   }
+
+  /* About Page */
+
+  #about-head {
+    flex-direction: column;
+    
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+    
+  }
+
+  #about-head div {
+    padding-left: 0px;
+  }
+
+  /* Account Page */
+  .account-card-container {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 10px; /* Ensure some margin on the smallest screens */
+    }
+
+
+    /* Contact Us Page */
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details{ 
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details .map{
+    width: 100%;
+  }
+
+#form-details{
+  margin: 10px;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+
+
+ #form-details form{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+
+
 }

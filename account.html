@@ -19,9 +19,9 @@
                     <li><a  href="index.html">Home</a></li>
                     <li><a  href="shop.html">Shop</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a  href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a class="active" href="account.html">Account</a></li>
                     <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
                     <a href="#" id="close"><i class="fas fa-times"></i></a>
                    
@@ -35,50 +35,60 @@
         </section>
 
 
-         <section id="page-header" class="about-header">
-            <h2><div id="About">About Us</div></h2>
-            <p>A BRAND YOU CAN TRUST</p>
+         <section id="page-header" class="account-header">
+            <h2><div id="About">Create Account</div></h2>
+            <p>Please fill in the form below to create a new account.</p>
         </section>
 
 
-        <section id="about-head" class="section-p1">
-            <img src="img/about/a6.jpg" alt="">
-            <div>
-                <h2>Who We Are?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <abbr title="ukclothes.com">UK clothes</abbr>
-                <br><br>
-                <marquee bgcolor="#ccc" loop="-1"  scrollamount="5" width="100%">Welcome to UK clothes - Your Trusted Online Clothing Store!</marquee>
+       <!-- Account Login/Register Section -->
+        <section id="login-register" class="section-p1">
+        <div class="account-card-container">
+            
+            <!-- Tab Links: Login & Register -->
+            <div class="account-tabs">
+                <a href="#" class="tab-link active">Login</a>
+                <a href="#" class="tab-link ">Register</a>
             </div>
+
+            <!-- Descriptive Text -->
+            <p class="description">If you have an account, sign in with your username or email address.</p>
+
+            <!-- Login Form -->
+            <form id="login-form" action="#" method="POST">
+                
+                <label for="username">Username or email address *</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password *</label>
+                <div class="password-input-group">
+                    <input type="password" id="password" name="password" required>
+                    <!-- FontAwesome Eye Icon -->
+                    <i class="far fa-eye password-toggle"></i> 
+                </div>
+
+                <div class="form-footer">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="lost-password">Lost your password?</a>
+                </div>
+
+                <button type="submit" class="login-button">Log in</button>
+            </form>
+            
+            <!-- The Register form would typically go here, hidden by default -->
+            <!-- <form id="register-form" style="display: none;"> ... </form> -->
+
+        </div>
+
+        
         </section>
 
+        
 
-        <section id="feature" class="section-p1">
-            <div class="fe-box">
-                <img src="img/features/f1.png" alt="">
-                <h6>Free Shipping</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f2.png" alt="">
-                <h6>Online Order</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f3.png" alt="">
-                <h6>Save Money</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f4.png" alt="">
-                <h6>Promotions</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f5.png" alt="">
-                <h6>Happy Sell</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f6.png" alt="">
-                <h6>24/7 Support</h6>
-            </div>
-        </section>
+
 
 
         <section id="newsletter" class="section-p1 section-m1">
